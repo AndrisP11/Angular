@@ -1,0 +1,98 @@
+.planner-section {
+  background-color: #394648;
+  padding: 20px;
+  min-height: calc(100vh - 46px);
+}
+
+.planner {
+  background-color: #32b4b4;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+  width: 400px;
+}
+
+.planner-title {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.task-add-btn {
+  border: none;
+  background-color: deeppink;
+  color: white;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  opacity: 0.9;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:disabled {
+    background-color: rgba(166, 165, 165, 0.87);
+    cursor: not-allowed;
+    opacity: 0.9;
+  }
+}
+
+.planner-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 10px;
+}
+
+.task-input {
+  width: 100%;
+}
+
+.planner-container {
+  display: flex;
+  justify-content: center;
+}
+
+.planner-tasks {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.planner-task {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  background-color: #F9EDCC;
+  align-items: center;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+}
+
+.task-del-btn{
+  border: none;
+  background-color: crimson;
+  color: black;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover{
+    background-color: #ec4d6d;
+  }
+}
+
+.tasks-complete{
+  display: flex;
+  background-color: #ffa280;
+  padding: 5px;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+  flex-direction: column;
+  margin-top: 5px;
+}
+
+.checked{
+  text-decoration: line-through;
+}

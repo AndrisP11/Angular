@@ -1,0 +1,83 @@
+<section class="user-section">
+  <div class="user-form-container">
+    <div *ngIf="user$ | async as user">
+      <div class="card-row">
+        <div class="card-container">
+          <div class="card">
+            <div class="card-details">
+              <div class="user-name">
+                <h1>{{ user.name }}</h1>
+              </div>
+              <div class="profile-image-container">
+                <div
+                  [ngStyle]="{ 'background-image': 'url(' + 'https://picsum.photos/id/' + user.id + '/300/300' + ')' }"
+                  class="profile-image">
+                </div>
+              </div>
+              <div class="info-form">
+                <div class="info">
+                  <p class="first-row">Username</p>
+                  <p class="first-row">Email address</p>
+                  <p class="first-row">Phone number</p>
+                </div>
+                <div class="login-form">
+                  <p class="second-row">{{ user.username }} </p>
+                  <p class="second-row">{{ user.email }} </p>
+                  <p class="second-row">{{ user.phone }} </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-details">
+              <p class="company-phrase-title">Company Catch Phrase</p>
+              <p class="company-phrase">{{ user.company.catchPhrase }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="card-details">
+              <p class="company-phrase-title">Website</p>
+              <p class="company-phrase">{{ user.website }}</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-details">
+              <p class="company-phrase-title">Address</p>
+              <div class="bullet-points">
+                  <div class="address-container">
+                    <img class="bullet" src="assets/images/bullet.svg" alt="">
+                    <p class="second-row">{{ user.address.street }} </p>
+                  </div>
+                  <div class="address-container">
+                    <img class="bullet" src="assets/images/bullet.svg" alt="">
+                    <p class="second-row">{{ user.address.suite }}  </p>
+                  </div>
+                  <div class="address-container">
+                    <img class="bullet" src="assets/images/bullet.svg" alt="">
+                    <p class="second-row">{{ user.address.city }}  </p>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-details">
+              <p class="company-phrase-title">Company Information</p>
+              <div class="bullet-points">
+                <div class="address-container">
+                  <img class="bullet" src="assets/images/bullet.svg" alt="">
+                  <p class="second-row">{{ user.company.name }} </p>
+                </div>
+                <div class="address-container">
+                  <img class="bullet" src="assets/images/bullet.svg" alt="">
+                  <p class="second-row">{{ user.company.bs}}  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

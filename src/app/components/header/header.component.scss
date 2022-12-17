@@ -1,0 +1,26 @@
+.header{
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #32b4b4;
+  gap: 10px;
+}
+
+.header-link {
+  text-decoration: none;
+  color: white;
+  border-bottom: 2px solid transparent;
+
+  &:hover {
+    color: deeppink;
+  }
+}
+
+.active {
+  color: #ffe851;
+  border-bottom-color: #ffe851;
+
+  &:hover {
+    color: deeppink;
+  }
+}
