@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.4.
 
+## Goal
+
+Create Front-End webpage that uses custom elements that are styled in css. User and Users pages use API from 'https://jsonplaceholder.typicode.com/users'. Project contains Login, Task Planner, Registration, All fetched Users, User pages.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
